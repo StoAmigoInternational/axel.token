@@ -1,0 +1,213 @@
+October 22, 2018
+Version 2.4.6
+	Website / App
+		- Removed Lodash library in favor of Underscore JS.
+		- Updated Underscore JS to 1.9.1 (See https://github.com/jashkenas/underscore for CHANGELOG).
+		- Name changes to select modules and components.
+		- uiScrollTo no longer throws excessive Uncaught TypeErrors originating from TweenMax.
+		- Added uiScrollTrack feature.
+		- Modified and improved Micron JS library.
+			- Revised data attributes to better reflect current animation framework.
+			- Added class helpers for better control of animations.
+			- Library now responds to scroll events.
+			- Optimized core library code.
+
+
+	Build Framework
+		- Improved and updated style guide documentation.
+		- Added version info options for app and styleguide to config.json.
+
+
+
+
+
+October 16, 2018
+Version 2.4.5 (no version change)
+	Website / App
+		- Fixed links from going to specified url.
+		- Fixed elements with microinteractions not playing on mouse or touch interaction.
+		- Fixed dialog not being fully centered.
+		- Fixed dialog dynamic auto-sizing.
+
+
+
+
+
+October 15, 2018
+Version 2.4.5
+	Website / App
+		- Revised microinteractions utilizing Micron JS.
+		- Added style guide page.
+		- Modals now using semantically correct dialog element instead of a <div>.
+		- Improved accessibility of dialog boxes.
+		- Corrected translate3D values for anim-bl class.
+		- Increased throttle value for onscroll updates.
+		- Rewrote some icon animation events.
+		- Optimized icon animations.
+		- Added Youtube video.
+		- Added utilMediaObserver for video content control.
+
+
+	Build Framework
+		- Build Framework now checks to see if a server.json configuration file exists upon initial or first run of the compiler and will create one if no file exists.
+		- Build Framework will now generate a style guide page when compiling.
+			- The build framework will also auto-generate a style guide page in dev mode.
+			- Additionally, the build framework will compile brand assets and fonts into a ZIP folder ready for download.
+			- styleguide.html can be edited during development as is treated like any other page.
+
+		- Additional options to CSS and JS optimizations.
+		- Fixed some mismatched CSS variables not being processed by the compiler.
+		- Removed unnecessary and redundant tasks from gulp.babel.js.
+		- Removed unnecessary and redundant options and values from config.json.
+		- General housekeeping of gulp.babel.js and config.json.
+
+
+
+
+
+September 28, 2018
+Version 2.4.4
+	Website / App
+		- Added Chinese translation and language options.
+		- Revised some icons and tweaked animations.
+		- Slider page dots are hidden on small screens.
+		- Line breaks <br> should now be displayed correctly in HTML.
+
+
+	Build Framework
+		- Updated Foundation to 6.5.0-rc.3 (See https://github.com/zurb/foundation-sites/releases/ for CHANGELOG).
+		- Added tracking options to config.json.
+		- Added FullStory tracking.
+		- GA is now under tracking options.
+		- Added check to canonical tag.
+		- Fixed line breaks <br> being processed incorrectly in HTML.
+		- Tracking scripts are no longer injected during Development mode.
+
+
+
+
+
+September 27, 2018
+Version 2.4.3
+	Website / App
+		- Icon animations are now activated via IntersectionObserver for browsers that support the IO API.
+		- Browsers with no IO support will fallback to 'scrollstart' and 'scrollstop' events.
+		- Animated icons will now individually play as they enter the viewport.
+		- Modal popup with a fixed width or height no longer dynamically adjust width or height on browser resize.
+		- Fixed modal popup container being displayed incorrectly on tablet devices.
+		- Adjusted modal padding.
+		- UI Close button is now fixed in modal padding.
+
+
+
+
+
+September 24, 2018
+Version 2.4.2
+	Website / App
+		- Added and replaced icons with new icons and animations.
+		- Tweaked icon animations.
+		- Tweaked global animation timing.
+		- Fixed some animations overlapping.
+		- Fixed animation alignment issues.
+		- Fixed some animations not pausing and resuming correctly.
+		- Increased throttling value for scroll events.
+		- Increased latency of IntersectionObserver.
+		- Modified latency of 'scrollstart' and 'scrollstop' events.
+		- Images no longer load if user quickly scrolls pass image assets.
+		- Fixed increasing paint count when certain elements are not in the viewport.
+
+
+
+
+
+September 21, 2018
+Version 2.4.1
+	Website / App
+		- Fixed blurry fonts in modal popup.
+		- Removed scale effect in modal popup.
+		- Adjusted width and height values when opening a modal popup.
+		- Minor tweaks and adjustments to icon animations.
+
+
+
+
+
+September 20, 2018
+Version 2.4.0
+	Website / App
+		- Added animated / interactive icons.
+		- Adjusted global timing for timeline animations.
+		- Optimized SVG graphics.
+		- Fixed minor layout issues with modal popups.
+		- Updated GSAP library to 2.0.2.
+		- Improved modal popup preload.
+		- Removed hidden sections in production files.
+		- Removed unused graphics.
+		- Removed unused modules and components.
+
+
+
+
+
+September 12, 2018
+Version 2.3.0
+	Website / App
+		- Reduced gap between <section> block elements.
+		- Added sprite sheet for press logos.
+		- General optimizations and fixes.
+		- Adjusted tolerance for IntersectionObserver and lazy-load fallback.
+
+
+	Build Framework
+		- Improved CSS optimization processing.
+		- PostCSS now handles a majority of CSS processing and optimization tasks.
+		- Improved error handling for Gulp tasks.
+		- Added sprite generation with generated CSS.
+
+
+
+
+
+September 12, 2018
+Version 2.2.0
+	Website / App
+		- Added 'Bruce Mcdonald' to 'Team' section.
+		- Minor layout adjustments.
+		- Revised layout of modal popups to be more mobile friendly.
+		- fxNeuralNetwork will stop rendering if window is out of focus and will run fxNeuralNetworkUpdate when window is in focus.
+
+
+	Build Framework
+		- Added sprite generation with CSS (currently in testing).
+
+
+
+
+
+September 11, 2018
+Version 2.1.0
+	Website / App
+		- Fixed images not loading in Edge, IE.
+		- Added preloader to modal popup content.
+		- Improved IntersectionObserver support.
+		- Major optimizations to CSS and JS.
+		- Full initial release.
+
+
+	Build Framework
+		- Versioning / Cache-busting now supported for images.
+		- Extended versioning / cache-busting options.
+		- Additional image optimization options.
+		- Improved WEBP optimization options.
+		- Improved SVG optimization options.
+		- Added Google Analytics tracking options.
+		- Added robots.txt options.
+		- Improved HTML processing in Panini engine.
+		- Improved modal popup processing.
+		- Revised inline script injection.
+		- Added option to add vendor scripts.
+		- General optimization and fixes to build framework.
+		- Completely removed server-config.json from project folder.
+			- Build Framework can now generate a config-server.json by running 'gulp deployinit'.
+			- server-config.json will now be ignored when pushing to Git.

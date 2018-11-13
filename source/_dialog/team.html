@@ -1,0 +1,49 @@
+---
+layout: dialog
+assets: assets/
+---
+
+<!-- CONTENT -->
+{{#each team.content}}
+
+
+	<article id="team-{{ id }}" class="profile grid-x align-center align-middle">
+		
+		
+		<!-- CELL -->
+		<div id="description" class="cell padding-tb-lg padding-lr-md">
+			
+
+			<!-- COPY -->
+			<h1 id="dialog-title" class="h2 font-copy text-secondary">{{ title }}</h1>
+			<p id="dialog-description" class="text-dark-grey header-left header-secondary">{{ subtitle }}</p>
+
+
+			<!-- SOCIAL -->
+			<ul class="social-icons dark list-vertical">
+
+				{{#each social}}
+				<li>
+					<a href="{{ link }}" target="_blank" rel="noopener" class="social-icon-{{ icon }}-hover" aria-label="{{ icon }}">
+						<span class="fa fa-{{ icon }}" aria-hidden="true"></span>
+					</a>
+				</li>
+				{{/each}}
+
+			</ul>
+			<!-- // SOCIAL -->
+
+
+			<p>{{ description }}</p>
+			<!-- // COPY -->
+
+			
+		</div>
+		<!-- // CELL -->
+
+
+	</article>
+
+
+{{/each}}
+<!-- // CONTENT -->

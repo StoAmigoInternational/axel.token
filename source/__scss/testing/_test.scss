@@ -1,0 +1,35 @@
+
+.text {
+	@include color-modifiers;
+}
+
+
+.background {
+	@include background-color-modifiers;
+}
+
+
+
+
+h1 {
+	color: map-get(map-get($colors, primary), base);
+}
+
+
+
+h2 {
+	color: map-get(map-get($colors, primary), base);
+}
+
+
+
+h3 {
+	color: map-get(map-get($colors, primary), base);
+}
+
+
+h4 {
+	color: map-get(map-get($colors, primary), base);
+}
+
+

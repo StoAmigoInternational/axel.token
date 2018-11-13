@@ -1,0 +1,140 @@
+/* -------------------------------------------------- */
+/* HEADER STYLES
+/* -------------------------------------------------- */
+
+    // EXTEND
+    %header-common {
+        display: block;
+
+        width: 10%;
+        height: 4px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+        content: '';
+
+        border-radius: 0;
+    }
+
+
+    // MIXIN
+    /*
+    @mixin colorize($color) {
+        
+        background-color: $color;
+
+        &:hover {
+            background-color: $color + 50;
+        }
+
+    }
+    */
+
+
+    /* -------------------------------------------------- */
+    /* BLOCK
+    /* -------------------------------------------------- */
+
+    .header::after,
+    .header-right::after,
+    .header-left::after,
+    .header-center::after {
+        @extend %header-common;
+    }
+
+
+    // MODIFIERS
+
+
+    /* -------------------------------------------------- */
+    /* ELEMENT
+    /* -------------------------------------------------- */
+
+
+
+
+
+
+
+/* -------------------------------------------------- */
+/* HEADER STYLES
+/* -------------------------------------------------- */
+
+.header-right::after {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.header-left::after {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.header-center::after {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* STYLES */
+.header-25::after {
+    width: 25%;
+}
+
+.header-50::after {
+    width: 50%;
+}
+
+.header-75::after {
+    width: 75%;
+}
+
+.header-full::after {
+    width: 100%;
+}
+
+
+/* COLORS: BRAND */
+.header {
+    @include background-color-modifiers;
+}
+
+
+/* REPONSIVE */
+@media only screen and (min-width: 0) and (max-width: 639px) {
+
+    .header-right-mobile::after {
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+    .header-left-mobile::after {
+        margin-right: auto;
+        margin-left: 0;
+    }
+
+    .header-center-mobile::after {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+}
+
+@media only screen and (min-width: 0) and (max-width: 1023px) {
+
+    .header-right-tablet::after {
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+    .header-left-tablet::after {
+        margin-right: auto;
+        margin-left: 0;
+    }
+
+    .header-center-tablet::after {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+}

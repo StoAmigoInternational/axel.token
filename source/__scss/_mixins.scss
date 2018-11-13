@@ -1,0 +1,62 @@
+/* -------------------------------------------------- */
+/* COLORS
+/* -------------------------------------------------- */
+
+@mixin color-modifiers {
+
+	@each $name, $color in $colors {
+
+		&-#{$name} {
+			color: map-get($color, base);
+		}
+
+	}
+
+}
+
+
+@mixin background-color-modifiers {
+
+	@each $name, $color in $colors {
+
+		&-#{$name} {
+			background-color: map-get($color, base);
+		}
+
+		&-#{$name}::after {
+			background-color: map-get($color, base);
+		}
+
+	}
+
+}
+
+
+/* -------------------------------------------------- */
+/* BREAKPOINTS
+/* -------------------------------------------------- */
+
+$breakpoints: (
+	small: 767px,
+	medium: 992px,
+	large: 1200px
+);
+
+
+@mixin respond-to($breakpoint) { 
+
+	@if map-has-key($breakpoints, $breakpoint) {
+
+		@media #{inspect( map-get($breakpoints, $breakpoint) )} {
+
+			@content;
+
+		}
+
+	} @else {
+
+		@warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. " + "Please make sure it is defined in `$breakpoints` map.";
+
+	}
+
+}
