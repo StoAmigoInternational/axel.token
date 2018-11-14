@@ -26,20 +26,6 @@ content:
 
 
  -
-  id: bruce-macdonald
-  title: Bruce Macdonald
-  subtitle: Lead Blockchain Architect
-  description: Bruce has many years of full stack software experience, working with everything from internet startups to Fortune 500 companies. These entities include among others the US Navy, Qualcomm, and Raytheon. As a software and architect designer, he played a role in creating ETL pipelines, data imagery and reporting analysis dashboards, big data analytics, and was involved with distributed network design and implementation. He was also responsible for designing and implementing message-based systems using both open and closed source stacks, and distributed multi-tier fault tolerant systems. Bruce did mobile design for Android and iOS, and most recently prototyped dApps for the Ethereum blockchain using client-side packages coupled to the blockchain via Smart Contracts. Bruce graduated from the University of California Berkeley with BA's in Physics and Mathematics and has recently filed provisional and utility patents with the USPTO in the blockchain/crypto and gaming space.
-  thumb: assets/team/small-bruce-macdonald.jpg
-  image: assets/team/large-bruce-macdonald.jpg
-  link: dialog/team
-  social:
-    -
-      icon: linkedin
-      link: https://www.linkedin.com/in/bruce-macdonald-678302138
-
-
- -
   id: jeremy-forsberg
   title: Jeremy Forsberg
   subtitle: Chief Marketing Officer
@@ -134,6 +120,20 @@ content:
 
 
  -
+  id: bruce-macdonald
+  title: Bruce Macdonald
+  subtitle: Chief Blockchain Architect
+  description: Bruce has many years of full stack software experience, working with everything from internet startups to Fortune 500 companies. These entities include among others the US Navy, Qualcomm, and Raytheon. As a software and architect designer, he played a role in creating ETL pipelines, data imagery and reporting analysis dashboards, big data analytics, and was involved with distributed network design and implementation. He was also responsible for designing and implementing message-based systems using both open and closed source stacks, and distributed multi-tier fault tolerant systems. Bruce did mobile design for Android and iOS, and most recently prototyped dApps for the Ethereum blockchain using client-side packages coupled to the blockchain via Smart Contracts. Bruce graduated from the University of California Berkeley with BA's in Physics and Mathematics and has recently filed provisional and utility patents with the USPTO in the blockchain/crypto and gaming space.
+  thumb: assets/team/small-bruce-macdonald.jpg
+  image: assets/team/large-bruce-macdonald.jpg
+  link: dialog/team
+  social:
+    -
+      icon: linkedin
+      link: https://www.linkedin.com/in/bruce-macdonald-678302138
+
+
+ -
   id: dmytro-ashkinazi
   title: Dmytro Ashkinazi
   subtitle: Director, European Operations
@@ -141,3 +141,4 @@ content:
   thumb: assets/team/small-dmytro-ashkinazi.jpg
   image: assets/team/large-dmytro-ashkinazi.jpg
   link: dialog/team
+  

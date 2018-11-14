@@ -1016,7 +1016,7 @@ self.__precacheManifest = [
   },
   {
     "url": "dialog/team.html",
-    "revision": "fa0b8873d3b7b5a016d5cbb30d39c870"
+    "revision": "9d1450f7bf7ff95ac552602b6fd02bce"
   },
   {
     "url": "dialog/whitepaper.html",
@@ -1064,7 +1064,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "46d018af7c48b21ed1bda2588e16f4cb"
+    "revision": "db5557aa6b25a5fd60411f4dc978155f"
   },
   {
     "url": "sample.html",
